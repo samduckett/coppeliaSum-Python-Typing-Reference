@@ -3658,7 +3658,7 @@ class SimAPI(Protocol):
 
     def readVisionSensor(
         self, visionSensorHandle: int
-    ) -> Tuple[int, list, list, Any]:
+    ) -> Tuple[int, list, list]:
         """
         URL: https://manual.coppeliarobotics.com/en/sim/simReadVisionSensor.htm
         Reads the state of a vision sensor. This function doesn't perform detection,
@@ -3671,7 +3671,6 @@ class SimAPI(Protocol):
             result (int): detection state (0 or 1), or -1 if
             packet1 (list): default auxiliary packet of 15 auxiliary values: the minimum of [intensity red green blue depth], the maximum of [intensity red green blue depth], and the average of [intensity red green blue depth]
             packet2 (list): additional auxiliary value packet (e.g. from an image processing component)
-            etc. (Any): Description not provided
 
         """
         ...
@@ -5509,4 +5508,5 @@ class SimAPI(Protocol):
 
         """
         ...
+
 
