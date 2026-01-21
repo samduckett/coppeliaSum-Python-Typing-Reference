@@ -5508,5 +5508,3 @@ class SimAPI(Protocol):
 
         """
         ...
-
-
