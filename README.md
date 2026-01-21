@@ -13,7 +13,7 @@ You can find the documentation here: https://manual.coppeliarobotics.com/
 
 ```python
 from typing import cast
-from sim_api import SimAPI
+from SimAPI.sim_api import SimAPI
 
 sim: SimAPI = cast(SimAPI, client.require("sim"))
 ```
