@@ -2111,7 +2111,7 @@ class SimAPI(Protocol):
         pathLengths: list,
         t: float,
         method: dict = {"type": "linear", "strength": 1.0, "forceOpen": False},
-        types: list[int] | None= None,
+        types: list[int] | None = None,
     ) -> list:
         """
         URL:
@@ -5508,3 +5508,4 @@ class SimAPI(Protocol):
 
         """
         ...
+
