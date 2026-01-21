@@ -1756,7 +1756,7 @@ class SimAPI(Protocol):
         """
         ...
 
-    def getObject(self, objectPath: str, options: dict) -> int:
+    def getObject(self, objectPath: str, options: dict = {}) -> int:
         """
         URL: https://manual.coppeliarobotics.com/en/sim/simGetObject.htm Retrieves
         an object handle based on its path and alias
@@ -4532,7 +4532,7 @@ class SimAPI(Protocol):
         self,
         objectHandle: int,
         targetPosition: float,
-        motionParams: list[float],
+        motionParams: list[float] = [],
     ) -> None:
         """
         URL:
@@ -4554,7 +4554,7 @@ class SimAPI(Protocol):
         self,
         objectHandle: int,
         targetVelocity: float,
-        motionParams: list[float],
+        motionParams: list[float] = [],
     ) -> None:
         """
         URL:
@@ -5509,3 +5509,4 @@ class SimAPI(Protocol):
 
         """
         ...
+
