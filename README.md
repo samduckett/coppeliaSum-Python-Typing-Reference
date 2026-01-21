@@ -18,5 +18,29 @@ from sim_api import SimAPI
 sim: SimAPI = cast(SimAPI, client.require("sim"))
 ```
 
+# Adding as a submodule and updatting
+### To Add
+```git
+git submodule add https://github.com/samduckett/coppeliaSum-Python-Typing-Reference/edit/main/README.md simAPI # or the path you want
+```
+Then simply commit the changes
+
+### To Clone a repo with simAPI
+```git
+git clone --recurse-submodules your/url/or/ssh_key
+```
+if alrady cloned
+```
+cd main-repo
+git submodule init
+git submodule update
+```
+### how to update submodule
+```
+cd simAPI
+git pull
+cd ..
+```
+Then simply commit the changes
 
 There is an MIT License for open-source use
