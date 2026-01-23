@@ -4,6 +4,8 @@ SimAPI is a Python package that enhances the way you interact with the CoppeliaS
 It provides Python stubs for enhanced typing and adds the documentation from CoppeliaSim, 
 making it easier to use the CoppeliaSim API and reducing switching back and forth from the docs during development.
 
+CoppeliaSim gives Python the methods at runtime witch is not good for us. This simply lets Python know what CoppeliaSim will give you at runtime during development
+
 have only tested it with a few API calls. There is a good chance there are bugs or missing parts of the documentation.
 But I tried my best to check everything important
 
@@ -18,7 +20,7 @@ from SimAPI.sim_api import SimAPI
 sim: SimAPI = cast(SimAPI, client.require("sim"))
 ```
 
-# Adding as a submodule and updatting
+# Adding as a submodule and updating
 ### To Add
 ```git
 git submodule add https://github.com/samduckett/coppeliaSum-Python-Typing-Reference/edit/main/README.md simAPI # or the path you want
